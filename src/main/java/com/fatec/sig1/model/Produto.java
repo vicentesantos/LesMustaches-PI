@@ -18,8 +18,6 @@ public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;	
-	private String catProduto;
-	private String tipoProduto;
 	@NotBlank(message = "Nome é requerido")
 	private String nome;
 	private long codBarras;
@@ -27,8 +25,9 @@ public class Produto {
 	private String descricao;
 	private int qtdEstoque;
 	private Double preco;
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String dataCadastro;
+	private String catProduto;
+	private String tipoProduto;
 
 	public Produto(String nome, Double preco) {
 		this.nome = nome;
