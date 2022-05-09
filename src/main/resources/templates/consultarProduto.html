@@ -38,6 +38,8 @@
 					<thead>
 						<tr>
 							<th>ID</th>
+							<th>Categoria</th>
+							<th>Tipo do Produto</th>
 							<th>Nome</th>
 							<th>Código de Barras</th>
 							<th>Marca</th>
@@ -50,6 +52,8 @@
 					<tbody>
 						<tr th:each="produto : ${produtos}">
 							<td th:text="${produto.id}"></td>
+							<td th:text="${produto.catProduto}"></td>
+							<td th:text="${produto.tipoProduto}"></td>
 							<td th:text="${produto.nome}"></td>
 							<td th:text="${produto.codBarras}"></td>
 							<td th:text="${produto.marca}"></td>

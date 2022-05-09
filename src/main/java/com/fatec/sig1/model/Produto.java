@@ -17,7 +17,9 @@ import org.joda.time.format.DateTimeFormatter;
 public class Produto {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private Long id;	
+	private String catProduto;
+	private String tipoProduto;
 	@NotBlank(message = "Nome é requerido")
 	private String nome;
 	private long codBarras;
@@ -34,8 +36,9 @@ public class Produto {
 	}
 
 	public Produto() {
+		
 	}
-
+	
 	public Long getId() {
 		return id;
 	}
@@ -112,6 +115,21 @@ public class Produto {
 
 	public void setDataCadastro(String dataCadastro) {
 		this.dataCadastro = dataCadastro;
+	}
+
+	public String getTipoProduto() {
+		return tipoProduto;
+	}
+
+	public void setTipoProduto(String tipoProduto) {
+		this.tipoProduto = tipoProduto;
+	}
+	public String getCatProduto() {
+		return catProduto;
+	}
+
+	public void setCatProduto(String catProduto) {
+		this.catProduto = catProduto;
 	}
 
 	// equals e tostring omitidos.
