@@ -8,6 +8,9 @@ Fernanda Gonçalves de Lima<br>
 Flavia Correa de Moraes Cacau Alves<br>
 Vicente Santos Gonçalves<br>
 
+![image 1](https://user-images.githubusercontent.com/79234463/167618014-ae216a6c-6c31-48c8-9592-38d1895ef66c.png)
+
+
 #### O que é a Les Mustaches Barbearia?
 > A Les Mustaches Barbearia nasce da necessidade de um público, majoritariamente masculino, que busca o melhor serviço, conforto, produtos e comodidades na hora de cortar o cabelo, cuidar da barba ou de cuidados para dias especiais.
 > Desta maneira, a Les Mustaches Barberia tem o foco nos seguintes públicos:
