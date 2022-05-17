@@ -1,10 +1,63 @@
-### Fatec ZL - Centro Paula Souza
+# Les Mustaches Barbearia
+
+### Projeto Interdisciplinar - Sistema Integrado de Gestão
 ##### Disciplina - Programação Web III
 **Grupo 1**  <br>
 Bruna Ciriaco Benedito<br>
 Fernanda Gonçalves de Lima<br>
 Flavia Correa de Moraes Cacau Alves<br>
 Vicente Santos Gonçalves<br>
+
+![image 1](https://user-images.githubusercontent.com/79234463/167618014-ae216a6c-6c31-48c8-9592-38d1895ef66c.png)
+
+
+#### O que é a Les Mustaches Barbearia?
+> A Les Mustaches Barbearia nasce da necessidade de um público, majoritariamente masculino, que busca o melhor serviço, conforto, produtos e comodidades na hora de cortar o cabelo, cuidar da barba ou de cuidados para dias especiais.
+> Desta maneira, a Les Mustaches Barberia tem o foco nos seguintes públicos:
+
+- Pessoas que desejam cuidados específicos para cabelo, barba e rosto;
+- Pais que desejam levar seus filhos para o primeiro corte em uma barbearia profissional e criar vínculos com eles;
+- Mulheres que desejam fazer cortes curtos específicos que salões tradicionais não tem o hábito ou conhecimento de como fazer;
+- Pessoas que deseja realizar tratamento completo para uma data especial.
+
+##### Identificação de Requisitos
+> Durante as atividades deste trabalho foram identificadas algumas necessidades em particular para este projeto, como: Criar, Ler, Alterar e Deletar (CRUD) Clientes, Profissionais, Produtos e Serviços Prestados, além das funções internas da própria empresa como compras, estoque, horários, envios, controle de pedidos realizados. Desta maneira, os requisitos funcionais deste projeot são:
+
+| Requisito | Descrição | Nível (A/B/C) |
+|-----------|-----------|---------------|
+| RF01 | Cliente e Profissional podem cadastrar, ler e alterar seu perfil | A
+| RF02 | Profissional pode deletar Cliente | A |
+| RF03 | Cliente pode realizar e agendar compras e serviços pelo site | M |
+| RF04 | Profissional pode disponibilizar horários e serviços pelo site | A |
+| RF05 | Cliente e Profissional podem realizar compras pelo site | M |
+
+> E as regras de Negócios identificados foram:
+
+| Regra | Descrição | Nível (A/B/C) |
+|-------|-----------|---------------|
+| RN01 | O cliente pode escolher se deseja retirar o produto no salão ou receber em casa | M |
+| RN02 | O cliente pode ter 10% de desconto no pagamento a vista em serviços ou compras de produtos | M |
+| RN03 | O cliente pode ter 5% de desconto ao realizar serviços às Terças, Quartas e Quintas | B | RN04 | O cliente pode escolher previamente quais produtos deseja usar no serviço a ser prestado e pagá-los online ou na hora | A |
+| RN05 | Os descontos dados ao clientes não são cumulativos, prevalecendo somente o maior desconto | M |
+
+##### Banco de dados
+
+> Com os levantamentos realizados para a compreensão do que é necessário para o funcionamento da Les Mustaches Barbearia, foi realizada a Modelagem Conceitual do Banco de Dados para saber quais são as tabelas existentes para, então depois, criá-las em NoSQL no formato JSON.
+
+![Conceitual_1](https://user-images.githubusercontent.com/79234463/167483701-9515cf29-8fd7-4cec-8df9-f544f8efabee.png)
+
+
+##### Prototipação IHC
+> O design do site foi baseado no minimalismo, pensado na forma de simplificar a navegação e a busca do cliente em nosso site pelos serviços, produtos e profissionais desejados.
+
+![WhatsApp Image 2022-05-09 at 09 10 11](https://user-images.githubusercontent.com/79234463/167483959-6d832c24-d20c-4be5-8fc0-bedbcfdead5c.jpeg)
+Tela de Login.
+
+![image](https://user-images.githubusercontent.com/79234463/167484331-6ce98454-4b1d-4fc5-bebd-a66cdcccae3d.png)
+Home Page.
+
+> As telas de Cliente, Profissional, Produtos e Serviços estão em desenvolvimento.
+
 
 ##### Processo de Desenvolvimento de Software - PDS
 > O PDS segue uma abordagem interativa incremental. Cada atividade da interação tem uma definição de pronto estabelecida com objetivo de controlar a qualidade. 

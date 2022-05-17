@@ -28,9 +28,17 @@ public class Produto {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private String dataCadastro;
 
-	public Produto(String nome, Double preco) {
+
+	public Produto(Long id, @NotBlank(message = "Nome é requerido") String nome, long codBarras, String marca,
+			String descricao, int qtdEstoque, Double preco) {
+		super();
+		this.id = id;
 		this.nome = nome;
-		this.setPreco(preco);
+		this.codBarras = codBarras;
+		this.marca = marca;
+		this.descricao = descricao;
+		this.qtdEstoque = qtdEstoque;
+		this.preco = preco;
 	}
 
 	public Produto() {

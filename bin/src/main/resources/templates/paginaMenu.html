@@ -12,52 +12,134 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand teste" href="#"><img width="200px" th:src="@{/images/logo_copy.jpeg}" /></a>
-			</div>
-			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li class="active"><a th:href="@{/sig/cliente}">Clientes </a></li>
-				<li><a th:href="@{/sig/profissional}">Profissional</a></li>
-				<li><a th:href="@{/sig/produto}">Produtos</a></li>
-				<li><a th:href="@{/sig/Servico}">Serviços</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Login</a></li>
-				<li><a th:href="@{/login?logout}"><span class="glyphicon glyphicon-log-in"></span> Logout </a></li>
-			</ul>
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+		<div class="w3-display-middle">
+			<h1 class="w3-jumbo w3-animate-top">Les Mustaches Barbearia</h1>
+			<button type="button" class="button">
+				<img src="https://img.icons8.com/ios/30/ffffff/calendar-plus.png" class="celendario" />
+				Agenda Online
+			</button>
+			<p class="w3-large w3-center"> Viva o conforto e o bem estar de cuidar da você</p>
 		</div>
-	</nav>
+		<div class="w3-display-bottomleft w3-padding-large">
+			<nav class="menu">
+				<ul class="menu">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="active"><a href="#cliente">Clientes </a></li>
+					<li><a href="#profissional">Profissional</a></li>
+					<li><a href="#produto">Produtos</a></li>
+					<li><a href="#servico">Serviços</a></li>
 
-
-	<div class="container">
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
-
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img width="100%" th:src="@{/images/stylish-man-sitting-in-a-barbershop.jpg}"  >
-				</div>
-
-				<div class="item">
-					<img width="100%" th:src="@{/images/salao.jpeg}" >
-				</div>
-
-				<div class="item">
-					<img width="100%" th:src="@{/images/logo.jpeg}"/>
-				</div>
-			</div>
+				</ul>
+			</nav>
 		</div>
 	</div>
+	<div class="tela-scroll">
+		<section id="cliente">
+			<span class="text">
+				<h3> Clietes </h6>
+					<p> Aqui colocamos nossa cliente em primeiro lugar</p>
+					<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
+					<p> e o Profissional que ira produzir esta função</p>
+					<button class="cadastra_cliente" th:src="@{sig/Cliente}">Cadastre-se</button>
+					<img class="img_cliente" th:src="@{/images/logo_copy.jpeg}" />
+			</span>
+		</section>
+		<section id="profissional">
+			<span class="text2">
+				<h1>Profissional</h1>
+				<p> Aqui colocamos nossa cliente em primeiro lugar</p>
+				<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
+				<p> e o Profissional que ira produzir esta função</p>
+				<a class="profissional_button">Cadastre-se</a>
+			</span>
+			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
+		</section>
+		<section id="produto">
+			Produtos
+			<span class="lis-product">
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</span>
+		</section>
+		<section id="servico">
+			<h1> Serviços</h1>
+			<div class="container img-servico">
+				<div class="overlay">
+					<div class="items"> Corte Infantil</div>
+					<div class="items head">
+				       <p> Crianças de 0 a 5 anos</p>
+						<hr>
+					</div>
+					<div class="items price">
+						<p class="old">R$ 40,90</p>
+						<p class="new">R$ 29,99</p>
+					</div>
+					<div class="items cart">
+						<i class="fa fa-shopping-cart"></i>
+						<span>ADD TO CART</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </body>

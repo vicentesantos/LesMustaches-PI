@@ -1,3 +1,354 @@
-.navbar-brand .teste{
-	margin:90%;
+html {
+  scroll-behavior: smooth;
+}
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg, .w3-display-container {
+  background-image: url('/images/fundo.png');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.w3-display-middle{
+	padding-top: 20%;
+	margin:auto;
+	text-align: center;
+	width:50%;
+	color: #FFFF;
+}
+
+.w3-animate-top{
+	font-size: 50px;
+}
+
+.celendario{
+	padding-right:10px;
+}
+
+.button{
+	margin-top:30px;
+	font-weight: bold;
+	background-color: rgb(98, 98, 98);
+	padding:10px;
+	font-size:20px;
+	border-style: none;
+}
+
+.w3-large, .w3-center{
+	font-size: 21px;
+	margin-top: 30px;
+}
+
+.menu{
+	display:flex;
+   	align-items:center ;
+   	justify-content: center;
+	width:100%;
+	list-style:none;
+	float:left;
+	color:rgb(255, 255, 255);
+	margin-top: 70px;
+}
+
+.menu li{
+	text-align: center;
+	margin:auto;
+	float:left;
+}
+
+.menu li a{
+	color:rgb(255, 255, 255); 
+	text-decoration:none; 
+	display:block;
+	font-size: 20px;
+}
+
+.menu li a:hover{
+	color:rgb(255, 255, 255);
+	text-shadow:0px 0px 5px #fff;
+}
+
+.tela-scroll{
+	height:100vh;
+	width:100%;
+}
+
+#cliente{
+	margin-top:5%;
+	background-color: #FFFF; 
+	width:100%;
+	height:100%
+	 
+}
+
+.text{
+	font-size: 30px;
+	text-align: center;
+	padding:90px;
+}
+
+.img_cliente{
+	margin-top:30px;
+	margin-left: 70%;
+	position: relative;
+	display:flex;
+	
+}
+
+button {
+  transition-duration: 0.9s;
+}
+.cadastra_cliente{
+	border-radius: 10px;
+	border-color: rgb(0, 0, 0);
+  	color: #fff;
+  	border-style: none;
+  	box-shadow: 0 0 40px 40px rgb(128, 128, 128) inset, 0 0 0 0 rgb(192, 192, 192);
+  	-webkit-transition: all 150ms ease-in-out;
+  	transition: all 150ms ease-in-out;
+  	margin-top: 10%;
+	margin-left: 45%;
+	text-align: center;
+	padding:10px;
+}
+
+.cadastra_cliente:hover{
+	color:black;
+	box-shadow: 0 0 15px 0 rgb(255, 255, 255) inset, 0 0 15px 15px rgb(192, 192, 192);
+}
+#profissional{
+	background-color: rgb(215, 215, 215); 
+	width:100%;
+	height:100%;
+	display:flex;
+	position:relative;
+}
+
+
+.text2{
+	text-align: center;
+	font-size: 30px;
+	align-items: center;
+	padding-top: 11%;
+	margin:auto;
+	height:inherit;
+}
+
+.img_profissional{
+	margin-left: 150px;
+
+}
+
+.profissional_button{
+	display:flex;
+	margin-top: 70px;
+	padding-left: 40%;
+	position: relative;
+ 	color: rgb(0, 0, 0);
+ 	text-decoration:none;	
+}
+a:before {
+  content: "";
+  text-decoration:none;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.8s ease-in-out 0s;
+  transition: all 0.8s ease-in-out 0s;
+}
+
+
+a:hover:before {
+	text-decoration: none;
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+  	transform: scaleX(1);
+}
+
+#produto{
+	background-color: rgb(128, 128, 128); 
+	width:100%;
+	height:100%;
+	display:inline-block;
+	position:relative;
+	text-align: center;
+	font-size: 60px;
+	color:rgb(255, 255, 255);
+}
+.lis-product{
+	position:relative;
+	display:flex;
+    border-width:2px;
+    width:100px;
+    height: 100px;
+    float: left;
+}
+
+.produto_01{
+	margin-top:10px;
+	padding:30px
+}
+.a-box {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+
+.img-container {
+    height: 240px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 0px 0px 20px 20px;
+    display: inline-block;
+}
+
+.img-container .img-pruduto {
+    height: 220px;
+    
+}
+
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    height: 250px;
+    width: 200px;
+}
+
+.text-container {
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
+
+.text-container h3 {
+  margin: 20px 0px 10px 0px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+}
+.title{
+	text-decoration:double;
+}
+.texto_produto, .de{
+	text-decoration: line-through;
+}
+.texto_produto{
+	color:black;
+	text-decoration: none;	
+}
+.butoon_carrinho{
+	margin:30px;
+}
+#servico{
+	background-color: rgb(0, 0, 0); 
+	width:100%;
+	height:100%;
+	display:inline-block;
+	position:relative;
+	text-align: center;
+	font-size: 60px;
+	color:rgb(255, 255, 255);
+}
+ .img-servico{
+  width: 400px ;
+  height: 400px; 
+  background: url("/images/infatil.jpg");
+  background-color: black;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.overlay {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr;
+  background: rgba(77, 77, 77, 0.9);
+  color: #fef5df;
+  opacity: 0;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+}
+.items {
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.head {
+  font-size: 30px;
+  line-height: 40px;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.head hr {
+  display: block;
+  width: 0;
+  border: none;
+  border-bottom: solid 2px #fef5df;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  transition: all 0.5s;
+}
+
+.price {
+  font-size: 22px;
+  line-height: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.price .old {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+.cart {
+  font-size: 12px;
+  opacity: 0;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+  transform: translateY(40px);
+  transition: all 0.7s;
+}
+.cart i {
+  font-size: 16px;
+}
+.cart span {
+  margin-left: 10px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay .head {
+  transform: translateY(0px);
+}
+.container:hover .overlay hr {
+  width: 75px;
+  transition-delay: 0.4s;
+}
+.container:hover .overlay .price {
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.container:hover .overlay .cart {
+  transform: translateY(0px);
+  transition-delay: 0.6s;
+  opacity: 1;
 }

@@ -2,6 +2,7 @@ package com.fatec.sig1.services;
 
 import java.util.List;
 import java.util.Optional;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -43,7 +44,9 @@ public Optional<Produto> altera(Produto produto) {
 	logger.info(">>>>>> 1.servico altera produto chamado");	
 	Optional<Produto> umProduto = consultaPorId(produto.getId());	
 	if (umProduto.isPresent()) {	
-		Produto produtoModificado = new Produto(produto.getNome(), produto.getPreco());	
+		//Long id, @NotBlank(message = "Nome é requerido") String nome, long codBarras, String marca,
+		//String descricao, int qtdEstoque, Double preco
+		Produto produtoModificado = new Produto(produto.getId(), produto.getNome(), produto.getCodBarras(), produto.getMarca(), produto.getDescricao(), produto.getQtdEstoque(), produto.getPreco());	
 		produtoModificado.setId(produto.getId());	
 		produtoModificado.setQtdEstoque(produto.getQtdEstoque());	
 			
