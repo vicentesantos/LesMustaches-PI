@@ -27,35 +27,119 @@
 					<li class="active"><a href="#">Home</a></li>
 					<li class="active"><a href="#cliente">Clientes </a></li>
 					<li><a href="#profissional">Profissional</a></li>
-					<li><a th:href="@{produto}">Produtos</a></li>
-					<li><a th:href="@{servico}">Serviços</a></li>
+					<li><a href="#produto">Produtos</a></li>
+					<li><a href="#servico">Serviços</a></li>
 
 				</ul>
 			</nav>
 		</div>
 	</div>
 	<div class="tela-scroll">
-			<section id="cliente">
-				<span class="text">
-					<h1> Clietes </h1>
+		<section id="cliente">
+			<span class="text">
+				<h3> Clietes </h6>
 					<p> Aqui colocamos nossa cliente em primeiro lugar</p>
 					<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
 					<p> e o Profissional que ira produzir esta função</p>
 					<button class="cadastra_cliente" th:src="@{sig/Cliente}">Cadastre-se</button>
-					<img class="img_cliente"th:src="@{/images/logo_copy.jpeg}"/>
-				</span>
-			</section>
-			<section id="profissional">
-				<span class="text">
-					<h1>Profissional</h1>
-					<p> Aqui colocamos nossa cliente em primeiro lugar</p>
-					<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
-					<p> e o Profissional que ira produzir esta função</p>
-					<p><button class="cadastra">Cadastre-se</button></p>
-					<p class="img_cliente"> <img th:src="@{/images/logo_copy.jpeg}"/></p>
-				</span>
-			</section>
-			<section id="truth"></section>
-			<section id="all-css"></section>
+					<img class="img_cliente" th:src="@{/images/logo_copy.jpeg}" />
+			</span>
+		</section>
+		<section id="profissional">
+			<span class="text2">
+				<h1>Profissional</h1>
+				<p> Aqui colocamos nossa cliente em primeiro lugar</p>
+				<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
+				<p> e o Profissional que ira produzir esta função</p>
+				<a class="profissional_button">Cadastre-se</a>
+			</span>
+			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
+		</section>
+		<section id="produto">
+			Produtos
+			<span class="lis-product">
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 59,90</p>
+								<p><b> Por: R$49,90 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</span>
+		</section>
+		<section id="servico">
+			<h1> Serviços</h1>
+			<div class="container img-servico">
+				<div class="overlay">
+					<div class="items"> Corte Infantil</div>
+					<div class="items head">
+				       <p> Crianças de 0 a 5 anos</p>
+						<hr>
+					</div>
+					<div class="items price">
+						<p class="old">R$ 40,90</p>
+						<p class="new">R$ 29,99</p>
+					</div>
+					<div class="items cart">
+						<i class="fa fa-shopping-cart"></i>
+						<span>ADD TO CART</span>
+					</div>
+				</div>
+			</div>
+		</section>
 	</div>
 </body>
