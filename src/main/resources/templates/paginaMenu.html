@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -36,28 +37,28 @@
 	</div>
 	<div class="tela-scroll">
 		<section id="cliente">
+			<img class="img_cliente" th:src="@{/images/cliente.jpg}" />
 			<span class="text">
-				<h3> Clietes </h6>
-					<p> Aqui colocamos nossa cliente em primeiro lugar</p>
-					<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
-					<p> e o Profissional que ira produzir esta função</p>
-					<button class="cadastra_cliente" th:src="@{sig/Cliente}">Cadastre-se</button>
-					<img class="img_cliente" th:src="@{/images/logo_copy.jpeg}" />
+				<p class="title"><img width="80px" th:src="@{/images/homem.png}"> Clientes </p>
+				<p> Aqui colocamos nosso cliente em primeiro lugar</p>
+				<p> quem optar por nosso serviços tem o benefício de escolher sua data
+					e o profissional que ira execultar o serviço fora outros benefício</p>
+				<a class="cadastra_cliente" th:href="@{/sig/cliente}">Cadastre-se</a>
 			</span>
 		</section>
 		<section id="profissional">
 			<span class="text2">
-				<h1>Profissional</h1>
+				<p class="title"><img  width="80px" th:src="@{/images/barbeiro.png}"> Profissional </p>
 				<p> Aqui colocamos nossa cliente em primeiro lugar</p>
 				<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
 				<p> e o Profissional que ira produzir esta função</p>
-				<a class="profissional_button">Cadastre-se</a>
+				<a class="cadastra_cliente">Cadastre-se</a>
 			</span>
 			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
 		</section>
 		<section id="produto">
-			Produtos
-			<span class="lis-product">
+			<p class="title"><img width="80px" th:src="@{/images/produtos.png}"> Produtos </p> <span
+				class="lis-product">
 				<div class="produto_01">
 					<div class="a-box">
 						<div class="img-container">
@@ -70,8 +71,8 @@
 						<div class="text-container">
 							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
 							<div class="texto_produto">
-								<p class="de"> De: R$ 59,90</p>
-								<p><b> Por: R$49,90 </b></p>
+								<p class="de"> De: R$ 49,90</p>
+								<p><b> Por: R$34,93 </b></p>
 								<input type="number" name="quantidade" min="1" max="100">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
@@ -83,12 +84,12 @@
 						<div class="img-container">
 							<div class="img-inner">
 								<div class="inner-skew">
-									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+									<img class="img-pruduto" th:src="@{/images/produtos/02.png}" />
 								</div>
 							</div>
 						</div>
 						<div class="text-container">
-							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<h3 class="title"><b>Shampoo Barba Forte Silver Gasoline 250ml</b></h3>
 							<div class="texto_produto">
 								<p class="de"> De: R$ 59,90</p>
 								<p><b> Por: R$49,90 </b></p>
@@ -104,15 +105,55 @@
 						<div class="img-container">
 							<div class="img-inner">
 								<div class="inner-skew">
-									<img class="img-pruduto" th:src="@{/images/produtos/01.png}" />
+									<img class="img-pruduto" th:src="@{/images/produtos/03.png}" />
 								</div>
 							</div>
 						</div>
 						<div class="text-container">
-							<h3 class="title"><b>Grooming para Cabelo B.URB Midlands 250ml</b></h3>
+							<h3 class="title"><b>Kit de Barbear Go. Clinical</b></h3>
 							<div class="texto_produto">
-								<p class="de"> De: R$ 59,90</p>
-								<p><b> Por: R$49,90 </b></p>
+								<p class="de"> De: R$ 60,90</p>
+								<p><b> Por: R$51,77 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/04.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Shampoo Sólido Kaé Cosméticos Nutrição Cabelos Ressecados 75g</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 34,90</p>
+								<p><b> Por: R$27,96 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/05.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Protetor Solar Mantecorp Skincare Episol Color 70FPS 40ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 79,90</p>
+								<p><b> Por: R$71,77 </b></p>
 								<input type="number" name="quantidade" min="1" max="100">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
@@ -120,26 +161,154 @@
 					</div>
 				</div>
 			</span>
-		</section>
-		<section id="servico">
-			<h1> Serviços</h1>
-			<div class="container img-servico">
-				<div class="overlay">
-					<div class="items"> Corte Infantil</div>
-					<div class="items head">
-				       <p> Crianças de 0 a 5 anos</p>
-						<hr>
-					</div>
-					<div class="items price">
-						<p class="old">R$ 40,90</p>
-						<p class="new">R$ 29,99</p>
-					</div>
-					<div class="items cart">
-						<i class="fa fa-shopping-cart"></i>
-						<span>ADD TO CART</span>
+			<span class="lis-product2">
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/06.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Tratamento Reconstrutor Truss Uso Obrigatório 260ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 162,90</p>
+								<p><b> Por: R$107,51 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
 					</div>
 				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/07.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Condicionador Don Alcides Rolling Stones 300g</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 39,90</p>
+								<p><b> Por: R$33,52 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/08.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Pomada em Pó Viking Route 66 15g</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 24,90</p>
+								<p><b> Por: R$17,43 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="produto_01">
+					<div class="a-box">
+						<div class="img-container">
+							<div class="img-inner">
+								<div class="inner-skew">
+									<img class="img-pruduto" th:src="@{/images/produtos/09.png}" />
+								</div>
+							</div>
+						</div>
+						<div class="text-container">
+							<h3 class="title"><b>Fator de Crescimento Capilar Don Alcides 90ml</b></h3>
+							<div class="texto_produto">
+								<p class="de"> De: R$ 139,90</p>
+								<p><b> Por: R$111,92 </b></p>
+								<input type="number" name="quantidade" min="1" max="100">
+								<a class="butoon_carrinho"> Carrinho </a>
+							</div>
+						</div>
+					</div>
+				</div>					
+			</span>
+			<div class="seta">
+			    <p>Ver mais Produtos</p>
+				<p href="#" class="arrow right"></p>
 			</div>
+		</section>
+		<section id="servico">
+			<p class="title"><img width="80px" th:src="@{/images/servico.png}"> Serviços </p>
+			<span class="lis-servico">
+				<div class="img-servico">
+					<div class="overlay">
+						<div class="items"> Corte Infantil</div>
+						<div class="items head">
+							<p> Crianças de 0 a 5 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 40,90</p>
+							<p class="new">R$ 29,99</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<i class="fa fa-scissors" aria-hidden="true"></i>
+				<div class="img-servico">
+					<div class="overlay">
+						<div class="items"> Corte Infantil</div>
+						<div class="items head">
+							<p> Crianças de 0 a 5 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 40,90</p>
+							<p class="new">R$ 29,99</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<div class="img-servico">
+					<div class="overlay">
+						<div class="items"> Corte Infantil</div>
+						<div class="items head">
+							<p> Crianças de 0 a 5 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 40,90</p>
+							<p class="new">R$ 29,99</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<div class="seta_servico">
+			    <p>Ver mais Serviços</p>
+				<p href="#" class="arrow right"></p>
+			</div>
+				
+			</span>
 		</section>
 	</div>
 </body>
