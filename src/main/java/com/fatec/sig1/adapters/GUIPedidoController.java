@@ -20,7 +20,7 @@ import com.fatec.sig1.model.Produto;
 import com.fatec.sig1.ports.MantemPedido;
 
 @Controller
-@RequestMapping(path = "/scv")
+@RequestMapping(path = "/sig")
 public class GUIPedidoController {
 	Logger logger = LogManager.getLogger(this.getClass());
 	@Autowired
@@ -58,7 +58,7 @@ public class GUIPedidoController {
 			pedido.setCpf(umPedido.getCpf());
 			ItemDePedido item = new ItemDePedido();
 			Produto produto = new Produto();
-			produto.setId(Long.parseLong(umPedido.getProdutoId()));
+			produto.setId(Long.parseLong(umPedido.getId()));
 			item.setProduto(produto);
 			item.setQuantidade(Integer.parseInt(umPedido.getQuantidade()));
 			List<ItemDePedido> itens = new ArrayList<ItemDePedido>();

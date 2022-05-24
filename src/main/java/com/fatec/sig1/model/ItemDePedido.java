@@ -16,7 +16,7 @@ public class ItemDePedido {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	Long id;
 	@OneToOne // cada item do pedido esta associado a um produto
-	@JoinColumn(name = "produtoId")
+	@JoinColumn(name = "id")
 	Produto produto;
 	@NotNull
 	int quantidade;

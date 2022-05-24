@@ -30,7 +30,8 @@ public Optional<Produto> consultaPorId(Long id) {
 	return repository.findById(id);	
 }	
 @Override	
-public Optional<Produto> save(Produto produto) {	
+public Optional<Produto> save(Produto produto) {
+	//produto.getId()
 	logger.info(">>>>>> servico save chamado ");	
 	return Optional.ofNullable(repository.save(produto));	
 }	

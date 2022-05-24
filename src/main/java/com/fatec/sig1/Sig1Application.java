@@ -9,7 +9,6 @@ public class Sig1Application {
 	
 	public static void main(String[] args) {
 		SpringApplication.run(Sig1Application.class, args);
-		
-		
+	
 	}
 }
