@@ -31,7 +31,7 @@
 					<li><a href="#profissional">Profissional</a></li>
 					<li><a href="#produto">Produtos</a></li>
 					<li><a href="#servico">Serviços</a></li>
-
+					<li><a th:href="@{/sig/pedido}">Pedidos</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -53,7 +53,7 @@
 				<p> Aqui colocamos nossa cliente em primeiro lugar</p>
 				<p> quem opta por ser nosso ciente tem o beneficio de escolher sua data,</p>
 				<p> e o Profissional que ira produzir esta função</p>
-				<a class="cadastra_cliente">Cadastre-se</a>
+				<a class="cadastra_cliente" th:href="@{/sig/profissional}">Cadastre-se</a>
 			</span>
 			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
 		</section>
@@ -245,8 +245,8 @@
 				</div>					
 			</span>
 			<div class="seta">
-			    <p>Ver mais Produtos</p>
-				<p href="#" class="arrow right"></p>
+			    <p th:href="@{/sig/produto}">Ver mais Produtos</p>
+				<a th:href="@{/sig/produto}" class="arrow right"></a>
 			</div>
 		</section>
 		<section id="servico">
@@ -305,8 +305,8 @@
 					</div>
 				</div>
 				<div class="seta_servico">
-			    <p>Ver mais Serviços</p>
-				<p href="#" class="arrow right"></p>
+			    <p th:href="@{/sig/servico}">Ver mais Serviços</p>
+				<a th:href="@{/sig/servico}" class="arrow right"></a>
 			</div>
 				
 			</span>
