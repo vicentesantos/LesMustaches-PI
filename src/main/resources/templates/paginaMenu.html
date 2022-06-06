@@ -40,11 +40,15 @@
 		<section id="cliente">
 			<img class="img_cliente" th:src="@{/images/cliente.jpg}" />
 			<span class="text">
+			<div class="title_cliente">
 				<p class="title"><img width="80px" th:src="@{/images/homem.png}"> Clientes </p>
+			</div>
 				<p> Aqui colocamos nosso cliente em primeiro lugar.</p>
 				<p> Quem optar por nosso serviços tem o benefício de escolher sua data
 					e o profissional que ira execultar o serviço fora outros benefício</p>
+			<div class="botao">
 				<a class="cadastra_cliente" th:href="@{/sig/cliente}">Cadastre-se</a>
+			</div>
 			</span>
 		</section>
 		<section id="profissional">
@@ -53,7 +57,9 @@
 				<p> Aqui colocamos nossos profissionais em primeiro lugar.</p>
 				<p> Quem opta por ser nosso profissional tem a liberdade abrir a agenda de serviços,</p>
 				<p> de acordo com a disponibilidade no período.</p>
-				<a class="cadastra_cliente" th:href="@{/sig/profissional}">Cadastre-se</a>
+				<div class="botao">
+					<a class="cadastra_cliente" th:href="@{/sig/profissional}">Cadastre-se</a>
+				</div>
 			</span>
 			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
 		</section>
@@ -74,7 +80,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 49,90</p>
 								<p><b> Por: R$34,93 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -94,7 +100,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 59,90</p>
 								<p><b> Por: R$49,90 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -115,7 +121,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 60,90</p>
 								<p><b> Por: R$51,77 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -135,7 +141,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 34,90</p>
 								<p><b> Por: R$27,96 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -155,7 +161,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 79,90</p>
 								<p><b> Por: R$71,77 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -177,7 +183,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 162,90</p>
 								<p><b> Por: R$107,51 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -197,7 +203,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 39,90</p>
 								<p><b> Por: R$33,52 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -217,7 +223,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 24,90</p>
 								<p><b> Por: R$17,43 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -237,7 +243,7 @@
 							<div class="texto_produto">
 								<p class="de"> De: R$ 139,90</p>
 								<p><b> Por: R$111,92 </b></p>
-								<input type="number" name="quantidade" min="1" max="100">
+								<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 								<a class="butoon_carrinho"> Carrinho </a>
 							</div>
 						</div>
@@ -246,7 +252,7 @@
 			</span>
 			<div class="seta">
 			    <p th:href="@{/sig/produto}">Ver mais Produtos</p>
-				<a th:href="@{/sig/produto}" class="arrow right"></a>
+				<a th:href="@{/sig/produto}" class="arrow "> </a>
 			</div>
 		</section>
 		<section id="servico">
@@ -304,12 +310,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="seta_servico">
+			</span>
+			<div class="seta_servico">
 			    <p th:href="@{/sig/servico}">Ver mais Serviços</p>
 				<a th:href="@{/sig/servico}" class="arrow right"></a>
 			</div>
-				
-			</span>
 		</section>
 	</div>
 </body>
