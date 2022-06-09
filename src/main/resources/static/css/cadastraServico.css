@@ -2,6 +2,7 @@ html, body{
 	margin: 0; 
 	padding: 0; 
 	height:100%;  
+	font-weight: bold; 
 }
 
 .menu{
@@ -47,10 +48,23 @@ html, body{
 }
 .card{
 	border:2px solid;
+	color:rgb(255, 255, 255);
+	background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    font-weight: bold; 
 }
 .btn-primary {
 	margin:10px;
     color: #1d2124;
     background-color: #ced4da;
     border-color: #dae0e5;
+    font-weight: bold; 
+}
+.servico{
+	width: 500px;
+    display: flex;
+    position: absolute;
+    margin-left: 32pc;
+    margin-top: -35pc;
 }

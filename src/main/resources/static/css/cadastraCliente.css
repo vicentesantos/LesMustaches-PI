@@ -54,11 +54,11 @@ html, body{
     background-color: #ced4da;
     border-color: #dae0e5;
 }
-img.cd_cliente{
-	width:400px;
+.cd_cliente{
+	    width: 500px;
     display: flex;
     position: absolute;
-    margin-left: 40pc;
-    margin-top: -40pc;
+    margin-left: 32pc;
+    margin-top: -35pc;
 }
 
