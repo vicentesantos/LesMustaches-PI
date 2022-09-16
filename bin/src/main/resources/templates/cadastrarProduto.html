@@ -19,12 +19,21 @@
 	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
 	integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
 	crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/cadastraProduto.css}" />
 </head>
 
 <body>
-	<header th:replace="fragments/header :: menuSuperior">
-		<div>header</div>
-	</header>
+	<nav class="menu">
+		<img width="16%" th:src="@{/images/logo_sem_fundo.png}" />
+		<ul class="menu_li">
+			<li class="active"><a href="http://localhost:8080">Home</a></li>
+			<li class="active"><a href="#cliente">Clientes </a></li>
+			<li><a href="#profissional">Profissional</a></li>
+			<li><a href="#produto">Produtos</a></li>
+			<li><a href="#servico">Serviços</a></li>
+			<li><a th:href="@{/sig/pedido}">Pedidos</a></li>
+		</ul>
+	</nav>
 	<div class="container my-5">
 		<br />
 		<h3>Cadastrar Produto</h3>
@@ -45,7 +54,7 @@
 						<div class="row">
 							<div class="form-group col-md-8">
 								<label for="codBarras" class="col-form-label">Código de
-									Barras</label> <input type="text" th:field="*{preco}"
+									Barras</label> <input type="text" th:field="*{codBarras}"
 									class="form-control" id="codBarras"
 									placeholder="Código de Barras" required> <span
 									th:if="${#fields.hasErrors('codBarras')}"
@@ -98,6 +107,7 @@
 								onclick="consulta();">
 						</div>
 					</form>
+					<img class="produtos" th:src="@{/images/produtos.png}">
 				</div>
 			</div>
 			<h6 th:text="${message}" class="text-danger"></h6>

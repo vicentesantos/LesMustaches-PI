@@ -1,9 +1,9 @@
-html, body{ margin: 0; padding: 0; height:100%; }
+html, body{ margin: 0; padding: 0; height:100%; width:100%;box-sizing:border-box }
 
 .bgimg, .w3-display-container {
-  margin-top:78px;
-  background-image: url('/images/fundo.png');
-  min-height: 100%;
+  background-image: url(/images/fundo.png);
+  height: 100%;
+  width:100%;
   background-position: center;
   background-size: cover;
 }
@@ -46,7 +46,7 @@ html, body{ margin: 0; padding: 0; height:100%; }
 
 }
 .menu{
-	display:flex;
+	display: flex;
    	align-items:center ;
    	justify-content: center;
 	width:100%;
@@ -54,8 +54,6 @@ html, body{ margin: 0; padding: 0; height:100%; }
 	float:left;
 	background-color: 	rgb(0, 0, 0); 
 	color:rgb(255, 255, 255);
-	
-
 }
 
 .menu li{
@@ -86,12 +84,12 @@ html, body{ margin: 0; padding: 0; height:100%; }
 }
 
 #cliente{
-	margin-top:60px;
-	background-color: #FFFF; 
+	
+	background-color:white; 
 	width:100%;
-	height:100%;
-	display:flex;
 	position:relative;
+	display:flex;
+	flex-direction: row;
 	 
 }
 .title{
@@ -103,16 +101,21 @@ html, body{ margin: 0; padding: 0; height:100%; }
 .text{
 	text-align: center;
 	font-size: 40px;
+	display:flex;
+	justify-content: space-around;
 	align-items: center;
-	margin: 50px;
+	flex-direction: column;
+	padding:20px;
+	margin:auto;
 	height:inherit;
-	margin-right: 150px;
-	padding:30px;
+	flex:1;
 }
 .img_cliente{
-	margin-top: -60px;
-	width:50%;
+	width:100%;
 	
+}
+.cliente-img{
+	flex:1;
 }
 
 
@@ -140,24 +143,33 @@ button {
 #profissional{
 	background-color: rgb(215, 215, 215); 
 	width:100%;
-	height:100%;
-	display:flex;
 	position:relative;
+	display:flex;
+	flex-direction: row;
+	
 }
 
 
 .text2{
 	text-align: center;
 	font-size: 40px;
+	display:flex;
+	justify-content: space-around;
 	align-items: center;
-	padding-top: 11%;
+	flex-direction: column;
+	padding:20px;
 	margin:auto;
 	height:inherit;
+	flex:1;
+	
+}
+.profissional-img{
+	flex:1
 }
 
 .img_profissional{
-	margin-left: 150px;
-
+	width:100%;
+border:none;
 }
 
 .profissional_button{
@@ -191,143 +203,119 @@ a:hover:before {
   	transform: scaleX(1);
 }
 
+/*Seção Produtos*/
+
+.container-produto{
+	height:auto;
+	background-color: rgb(128, 128, 128);
+	display:flex;
+	flex-direction:column;
+	padding:20px;
+}
+
+
+
+
 #produto{
-	background-color: rgb(128, 128, 128); 
+background-color: rgb(128, 128, 128);
 	width:100%;
-	height:160vh;
-	display:inline-block;
-	position:relative;
+
+	display:flex;
+	padding:1rem;
+    justify-content: space-around;
+	text-align: center;
+	font-size: 60px;
+	color:rgb(255, 255, 255);
+	
+}
+@media screen and (max-width: 758px){
+	#produto{
+	width: 90%;
+    height: auto;
+    color: black;
+    background-color: rgb(255 255 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+	}
+
+   
+} 
+
+.produtos2{
+	background-color: rgb(128, 128, 128);
+	width:100%;
+	
+	display:flex;
+	padding:1rem;
+	justify-content: space-around;
 	text-align: center;
 	font-size: 60px;
 	color:rgb(255, 255, 255);
 }
-.title{
-	margin-top:90px;
-}
-.lis-product{
-	position: relative;
-    display: flex;
-    border-width: 2px;
-    width: 100px;
-    height: 100px;
-    float: left;
-    align-items: center;
-    padding-left: 90px;
-    padding-top: 183px;
-	
-}
-.lis-product2{
-	margin-top: 30%;
-    position: relative;
-    display: flex;
-    border-width: 2px;
-    width: 100px;
-    height: 100px;
-    float: left;
-    padding-left: 125px;
-    padding-top: 152px;
+.text-produto{
+	background-color: rgb(128, 128, 128);
+	text-align: center;
+	margin:0;
+	color:white;
 }
 
-.produto_01{
-	 display: flex;
-  justify-content: center;
-  align-items: center;
-	padding:30px
-}
-
-.a-box {
-  display: inline-block;
-  width: 240px;
-  text-align: center;
-}
-
-.img-container {
-    height: 240px;
-    width: 200px;
-    overflow: hidden;
-    border-radius: 0px 0px 20px 20px;
-    display: inline-block;
-}
-
-.img-container .img-pruduto {
-    height: 220px;
-    
-}
-
-.inner-skew {
-    display: inline-block;
-    border-radius: 20px;
-    overflow: hidden;
-    padding: 0px;
-    font-size: 0px;
-    margin: 30px 0px 0px 0px;
-   
-}
-
-.text-container {
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-  padding: 120px 20px 20px 20px;
-  border-radius: 20px;
-  background: #fff;
-  margin: -120px 0px 0px 0px;
-  line-height: 19px;
-  font-size: 14px;
-  height: 400px;
-  
-}
-
-.text-container h3 {
-  margin: 20px 0px 10px 0px;
-  color: rgb(0, 0, 0);
-  font-size: 18px;
-}
-.texto_produto, .de{
-	text-decoration: line-through;
-}
-.texto_produto{
-	color:black;
-	text-decoration: none;	
-}
-.butoon_carrinho{
-	margin:30px;
-}
-.arrow {
-	position: absolute;
-	width: 3vmin;
-	height: 3vmin;
-	background: transparent;
-	border-top: 1vmin solid white;
-	border-right: 1vmin solid white;
-	box-shadow: 0 0 0 lightgray;
-	transition: all 200ms ease;
-}
-.arrow, .right {
-		left: 59%;
-		margin-top:-29px;
-		transform: translate3d(0, -50%, 0) rotate(45deg);
-	}
-.arrow:hover {
-		border-color: rgb(0, 0, 0);
-		box-shadow: 0.5vmin -0.5vmin 0 white;
-	}
-
-.arrow:before {
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-40%, -60%) rotate(45deg);
-		width: 200%;
-		height: 200%;
-	}
-.seta{
-	font-size: 29px;
-    margin-top: 61%;
-}
-#servico{
+.carrinho{
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap:20px;
 	width:100%;
-	height:100vh;
-	display:inline-block;
+}
+.produto1{
+	width: 250px;
+	height:350px;
+	color:black;
+	background-color:rgb(255 255 255);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction:column;
+	padding-bottom:20px;
+	border-radius:10%;
+}
+	
+
+.produto1 h1{
+	font-size:20px;
+}
+.produto1 p{
+	font-size:16px;
+}
+
+.produto1 input{
+	font-size:20px;  
+}
+.produto1 a{
+	font-size:20px;
+}
+
+
+
+
+.img-produtos{
+	height:100px;
+	width:100px;
+}
+@media  screen and (max-width: 758px){
+	.img-produtos{
+		width:40px;
+		height:40px;
+	}
+}
+
+
+
+#servico{
+	width:auto;
+	height:auto;
 	background-color: rgb(0, 0, 0); 
 	position:relative;
 	text-align: center;
@@ -354,10 +342,16 @@ a:hover:before {
   box-shadow: 0 0 5px #000;
     margin:6px;
 }
+.adulto{
+	background-image: url(/images/adulto.jpg);
+}
+.diversos{
+	background-image: url(/images/combo.jpeg);
+}
 .overlay {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
+  grid-template-rows: 2fr 0fr 0fr 1fr;;
   background: rgba(77, 77, 77, 0.9);
   color: #fef5df;
   opacity: 0;
@@ -448,38 +442,35 @@ a:hover:before {
 .seta_servico{
 	font-size: 29px;
 }
-@media  screen and  (max-width:1220px) {
+
+
+@media  screen and (max-width: 1200px){
+@media  screen and (min-width: 902px){
 	.w3-text-white{
-    	margin-top: 4%;
+    	margin-top: 1%;
    		background-image: url(/images/fundo.png);
-    	min-height: 100%;
+    	height: auto;
+    	width:auto;
     	background-position: center;
     	background-size: cover;
 	}
 	.w3-display-middle {
-    	padding-top: 15%;
-    	margin: auto;
+    	padding:20%;
     	text-align: center;
-    	width: 49%;
+    	width: auto;
     	color: #FFFF;
 	}
 	#cliente {
-    	margin-top: 5%;
     	background-color: #FFFF;
-    	width: 100%;
-    	display: flex;
+    	width: auto;
     	position: relative;
-	}
-	.img_cliente {
-   		margin-top: -61px;
-    	width: 50%;
 	}
 	.text {
     	text-align: center;
     	font-size: 23px;
     	align-items: center;
-    	margin: 32px;
-    	height: inherit;
+       	height: auto;
+       	width:auto;
    
 	}
 	.title {
@@ -489,53 +480,45 @@ a:hover:before {
     	margin-top: -100px;
     	margin-bottom: 42px;
 	}
-	.botao {
-    	margin: 50px;
-    }
-    
     /*Profissional*/
-    .text2 {
+    #profissional{
     	text-align: center;
     	font-size: 23px;
     	align-items: center;
-        margin: auto;
-    	height: inherit;
-    	margin-top: -11%;
+    	height: auto;
+    	width:auto;
+    	
+	}
+	.text2 {
+	    text-align: center;
+	    font-size: 23px;
+	    align-items: center;
+	    margin: auto;
+	    display:block;
+	}
+	.img_profissional {
+    	width: 100%;
+    	border: none;
 	}
     
     /*Produtos*/
     #produto {
     	background-color: rgb(128, 128, 128);
     	width: 100%;
-    	height: 200vh;
-    	display: inline-block;
+    	height: auto;
     	position: relative;
     	text-align: center;
     	font-size: 60px;
     	color: rgb(255, 255, 255);
 	}
-	.lis-product {
-    position: relative;
-    display: flex;
-    border-width: 2px;
-    width: 100px;
-    height: 100px;
-    float: left;
-    align-items: center;
-    padding-left: 40px;
-    padding-top: 36px;
-}
-.lis-product2 {
-    margin-top: 30%;
-    position: relative;
-    display: flex;
-    border-width: 2px;
-    width: 100px;
-    height: 100px;
-    float: left;
-    padding-left: 61px;
-    padding-top: 75px;
-}
+	.produto1{
+		margin: 3px;
+	}
+	.title {
+    	margin-top: 34px;
+    	margin-bottom: 80px;
+	}
+
     .img-container .img-pruduto {
    		height: 150px;
 	}
@@ -554,52 +537,57 @@ a:hover:before {
     	color: rgb(0, 0, 0);
     	font-size: 14px;
 	}
-	.produto_01 {
-    	display: flex;
-    	justify-content: center;
-    	align-items: center;
-    	padding: 5px;
-	}
 	.a-box {
     	display: inline-block;
-    	width: 217px;
+    	width: 164px;
     	margin-top: 138px;
     	text-align: center;
 	}
 	.seta {
     font-size: 20px;
-    padding: 42px;
-    margin-top: 64%;
-    margin-left: 0px;
-   	}
+    justify-content: center;
+    text-align: center;
+    margin-top: 41px;
+    }
    	.arrow, .right {
     	margin-left: 32px;
     	transform: translate3d(0, -50%, 0) rotate(45deg);
 	} 
 	/*serviço*/  
 	.title {
-    	margin-top: 34px;
+    	margin-top: 0px;
 	} 
 	#servico {
-    	width: 100%;
-    	height: 136vh;
-    	display: inline-block;
-    	background-color: rgb(0, 0, 0);
-    	position: relative;
-    	text-align: center;
-    	font-size: 57px;
-    	color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    font-size: 57px;
+    text-align: center;
+    color: rgb(255, 255, 255);
 	}
+	.overlay {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    background: rgba(77, 77, 77, 0.9);
+    color: #fef5df;
+    opacity: 0;
+    transition: all 0.5s;
+    font-family: "Playfair Display", serif;
+}
 	.lis-servico {
-		margin:0px;
-		padding:0px;
-    	position: relative;
-    	display: flex;
-    	float: left;
+		margin: 0px;
+	    padding: 0px;
+	    position: relative;
+	    display: flex !important;
+	    float: left;
+	    justify-content: center;
+	    width: 100%;
+	    align-content: center;
 	}
 
 	.img-servico {
-    	width: 388px;
+    	width: 312px;
     	height: 508px;
     	background: url(/images/infatil.jpg);
     	background-color: black;
@@ -609,4 +597,192 @@ a:hover:before {
     	box-shadow: 0 0 5px #000;
     	margin: 6px;
 	}
+	.adulto{
+		background-image: url(/images/adulto.jpg);
+	}
+	.diversos{
+		background-image: url(/images/combo.jpeg);
+	}
+}
+}
+@media  screen and  (max-width:901px) {
+	
+	.w3-text-white{
+    	margin-top: 4%;
+   		background-image: url(/images/fundo.png);
+    	height: 100%;
+    	width:100%;
+    	background-position: center;
+    	background-size: cover;
+	}
+	.w3-display-middle {
+    	height: 100%;
+   		margin: auto;
+    	text-align: center;
+    	width: auto;
+    	padding-top: 35%;
+    	color: #FFFF;
+    	display: block;
+	}
+	#cliente {
+	    background-color: #FFFF;
+	    display: block;
+	    justify-content: center;
+	    position: relative;
+	}
+	.img_cliente {
+   		display: none;
+	}
+	.text {
+    	text-align: center;
+    	font-size: 23px;
+    	align-items: center;
+    	margin: 32px;
+    	height: inherit;
+   
+	}
+	.title {
+    	margin-top: 94px;
+	}
+	.title_cliente {
+    	margin-top: -100px;
+    	margin-bottom: 42px;
+	}
+	.botao {
+    	margin: 76px;
+    }
+    
+    /*Profissional*/
+    #profissional{
+		background-color: rgb(215, 215, 215); 
+		width:100%;
+		height:auto;
+		display: block;
+		justify-content: center;
+    	align-content: center;
+	}
+    .text2 {
+    	text-align: center;
+    	font-size: 23px;
+    	align-items: center;
+    	margin: auto;
+        margin-top: -11%;
+	}
+	.img_profissional{
+		display: none;
+	}
+    
+    /*Produtos*/
+    #produto {
+    	background-color: rgb(128, 128, 128);
+    	width: 100%;
+    	height: 500px;
+    	display: contents;
+    	align-items:center;
+    	justify-content: space-between;
+    	flex-direction: row;
+    	gap:15px;
+    	color: rgb(255, 255, 255);
+	}
+	.produtos2{
+		display:none;
+	}
+	.produto1 {
+ 		margin: 20px;
+	}
+
+    .img-container .img-pruduto {
+   		height: 150px;
+	}
+	.text-container {
+   	 	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    	padding: 24px 20px 20px 20px;
+    	border-radius: 20px;
+    	background: #fff;
+    	margin: -147px 0px 0px 0px;
+    	line-height: 19px;
+    	font-size: 12px;
+    	height: 272px;
+	}
+	.text-container h3 {
+    	margin: 20px 0px 10px 0px;
+    	color: rgb(0, 0, 0);
+    	font-size: 14px;
+	}
+	.container-produto {
+    height: auto;
+    background-color: rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    }
+	
+	.a-box {
+    	width: 217px;
+    	margin-top: 20px;
+    	text-align: center;
+	}
+	.seta {
+    	font-size: 20px;
+    	margin: 90px !important;
+    	padding: 0 !important;
+   	}
+   	.arrow, .right {	
+    	margin-left: 111px;
+    	transform: translate3d(0, -50%, 0) rotate(45deg);
+	} 
+	/*serviço*/
+	.title {
+    	margin-top: 34px;
+	} 
+	#servico {
+    	width: 100%;
+    	height: auto;
+    	display: grid;
+    	justify-content: center;
+    	background-color: rgb(0, 0, 0);
+    	position: relative;
+    	text-align: center;
+    	font-size: 57px;
+    	color: rgb(255, 255, 255);
+	}
+	.overlay {
+    	display: grid;
+    	grid-template-columns: 1fr;
+    	grid-template-rows: 1fr 1fr 2fr 2fr;
+    	background: rgba(77, 77, 77, 0.9);
+    	color: #fef5df;
+    	opacity: 0;
+    	transition: all 0.5s;
+    	font-family: "Playfair Display", serif;
+	}
+	.lis-servico {
+		margin:0px;
+		padding:0px;
+    	display: block;
+	}
+	.items {
+  		padding-left: 0px !important;
+  		letter-spacing: 0px !important;
+	}
+
+	.img-servico {
+    	background-color: black;
+    	background-size: cover;
+    	cursor: pointer;
+    	width: auto;
+    	height: auto;
+    	-webkit-box-shadow: 0 0 5px #000;
+    	box-shadow: 0 0 5px #000;
+    	margin: 6px;
+    	}
+     .adulto{
+			background-image: url(/images/adulto.jpg);
+		}
+	.diversos{
+		background-image: url(/images/combo.jpeg);
+	}
+	
 }

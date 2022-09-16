@@ -1,9 +1,7 @@
-html {
-  scroll-behavior: smooth;
-}
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
+html, body{ margin: 0; padding: 0; height:100%; }
+
 .bgimg, .w3-display-container {
+  margin-top:78px;
   background-image: url('/images/fundo.png');
   min-height: 100%;
   background-position: center;
@@ -39,7 +37,14 @@ body, html {height: 100%}
 	font-size: 21px;
 	margin-top: 30px;
 }
+.w3-display-bottomleft, .w3-padding-large{
+ z-index: 9999; 
+ position: fixed; 
+ left: 0; 
+ top: 0;
+ width: 100%;
 
+}
 .menu{
 	display:flex;
    	align-items:center ;
@@ -47,8 +52,10 @@ body, html {height: 100%}
 	width:100%;
 	list-style:none;
 	float:left;
+	background-color: 	rgb(0, 0, 0); 
 	color:rgb(255, 255, 255);
-	margin-top: 70px;
+	
+
 }
 
 .menu li{
@@ -73,28 +80,41 @@ body, html {height: 100%}
 	height:100vh;
 	width:100%;
 }
+.sticky {
+  position: sticky;
+  bottom: 50px;
+}
 
 #cliente{
-	margin-top:5%;
+	margin-top:60px;
 	background-color: #FFFF; 
 	width:100%;
-	height:100%
+	height:100%;
+	display:flex;
+	position:relative;
 	 
+}
+.title{
+	text-decoration:double;
+	font-size: 40px;
+	padding: 20px;
 }
 
 .text{
-	font-size: 30px;
 	text-align: center;
-	padding:90px;
+	font-size: 40px;
+	align-items: center;
+	margin: 50px;
+	height:inherit;
+	margin-right: 150px;
+	padding:30px;
 }
-
 .img_cliente{
-	margin-top:30px;
-	margin-left: 70%;
-	position: relative;
-	display:flex;
+	margin-top: -60px;
+	width:50%;
 	
 }
+
 
 button {
   transition-duration: 0.9s;
@@ -107,14 +127,14 @@ button {
   	box-shadow: 0 0 40px 40px rgb(128, 128, 128) inset, 0 0 0 0 rgb(192, 192, 192);
   	-webkit-transition: all 150ms ease-in-out;
   	transition: all 150ms ease-in-out;
-  	margin-top: 10%;
-	margin-left: 45%;
+  	margin-top: 50px;
 	text-align: center;
 	padding:10px;
 }
 
 .cadastra_cliente:hover{
 	color:black;
+	text-decoration: none;
 	box-shadow: 0 0 15px 0 rgb(255, 255, 255) inset, 0 0 15px 15px rgb(192, 192, 192);
 }
 #profissional{
@@ -128,7 +148,7 @@ button {
 
 .text2{
 	text-align: center;
-	font-size: 30px;
+	font-size: 40px;
 	align-items: center;
 	padding-top: 11%;
 	margin:auto;
@@ -156,7 +176,6 @@ a:before {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -175,26 +194,47 @@ a:hover:before {
 #produto{
 	background-color: rgb(128, 128, 128); 
 	width:100%;
-	height:100%;
+	height:160vh;
 	display:inline-block;
 	position:relative;
 	text-align: center;
 	font-size: 60px;
 	color:rgb(255, 255, 255);
 }
+.title{
+	margin-top:90px;
+}
 .lis-product{
-	position:relative;
-	display:flex;
-    border-width:2px;
-    width:100px;
+	position: relative;
+    display: flex;
+    border-width: 2px;
+    width: 100px;
     height: 100px;
     float: left;
+    align-items: center;
+    padding-left: 90px;
+    padding-top: 183px;
+	
+}
+.lis-product2{
+	margin-top: 30%;
+    position: relative;
+    display: flex;
+    border-width: 2px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-left: 125px;
+    padding-top: 152px;
 }
 
 .produto_01{
-	margin-top:10px;
+	 display: flex;
+  justify-content: center;
+  align-items: center;
 	padding:30px
 }
+
 .a-box {
   display: inline-block;
   width: 240px;
@@ -221,8 +261,7 @@ a:hover:before {
     padding: 0px;
     font-size: 0px;
     margin: 30px 0px 0px 0px;
-    height: 250px;
-    width: 200px;
+   
 }
 
 .text-container {
@@ -233,15 +272,14 @@ a:hover:before {
   margin: -120px 0px 0px 0px;
   line-height: 19px;
   font-size: 14px;
+  height: 400px;
+  
 }
 
 .text-container h3 {
   margin: 20px 0px 10px 0px;
   color: rgb(0, 0, 0);
   font-size: 18px;
-}
-.title{
-	text-decoration:double;
 }
 .texto_produto, .de{
 	text-decoration: line-through;
@@ -253,25 +291,68 @@ a:hover:before {
 .butoon_carrinho{
 	margin:30px;
 }
+.arrow {
+	position: absolute;
+	width: 3vmin;
+	height: 3vmin;
+	background: transparent;
+	border-top: 1vmin solid white;
+	border-right: 1vmin solid white;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+}
+.arrow, .right {
+		left: 59%;
+		margin-top:-29px;
+		transform: translate3d(0, -50%, 0) rotate(45deg);
+	}
+.arrow:hover {
+		border-color: rgb(0, 0, 0);
+		box-shadow: 0.5vmin -0.5vmin 0 white;
+	}
+
+.arrow:before {
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%, -60%) rotate(45deg);
+		width: 200%;
+		height: 200%;
+	}
+.seta{
+	font-size: 29px;
+    margin-top: 61%;
+}
 #servico{
-	background-color: rgb(0, 0, 0); 
 	width:100%;
-	height:100%;
+	height:100vh;
 	display:inline-block;
+	background-color: rgb(0, 0, 0); 
 	position:relative;
 	text-align: center;
 	font-size: 60px;
 	color:rgb(255, 255, 255);
+	
 }
+.lis-servico{
+	justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+
+}
+
  .img-servico{
   width: 400px ;
-  height: 400px; 
+  height: 510px; 
   background: url("/images/infatil.jpg");
   background-color: black;
   background-size: cover;
   cursor: pointer;
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
+    margin:6px;
 }
 .overlay {
   display: grid;
@@ -325,30 +406,207 @@ a:hover:before {
   transform: translateY(40px);
   transition: all 0.7s;
 }
-.cart i {
+.cart .i {
   font-size: 16px;
 }
 .cart span {
   margin-left: 10px;
 }
 
-.container:hover .overlay {
+ .img-servico:hover .overlay {
   opacity: 1;
 }
-.container:hover .overlay .head {
+ .img-servico:hover .overlay .head {
   transform: translateY(0px);
 }
-.container:hover .overlay hr {
+ .img-servico:hover .overlay hr {
   width: 75px;
   transition-delay: 0.4s;
 }
-.container:hover .overlay .price {
+ .img-servico:hover .overlay .price {
   transform: translateY(0px);
   transition-delay: 0.3s;
   opacity: 1;
 }
-.container:hover .overlay .cart {
+ .img-servico:hover .overlay .cart {
   transform: translateY(0px);
   transition-delay: 0.6s;
   opacity: 1;
+}
+.qdt{
+		border-left-style: none;
+    	border-right-style: none;
+    	border-top-style: none;
+}
+.butoon_carrinho{
+	text-decoration: none;
+	color:#000;
+}
+
+	
+
+.seta_servico{
+	font-size: 29px;
+}
+@media  screen and  (max-width:1220px) {
+	.w3-text-white{
+    	margin-top: 4%;
+   		background-image: url(/images/fundo.png);
+    	min-height: 100%;
+    	background-position: center;
+    	background-size: cover;
+	}
+	.w3-display-middle {
+    	padding-top: 15%;
+    	margin: auto;
+    	text-align: center;
+    	width: 49%;
+    	color: #FFFF;
+	}
+	#cliente {
+    	margin-top: 5%;
+    	background-color: #FFFF;
+    	width: 100%;
+    	display: flex;
+    	position: relative;
+	}
+	.img_cliente {
+   		margin-top: -61px;
+    	width: 50%;
+	}
+	.text {
+    	text-align: center;
+    	font-size: 23px;
+    	align-items: center;
+    	margin: 32px;
+    	height: inherit;
+   
+	}
+	.title {
+    	margin-top: 94px;
+	}
+	.title_cliente {
+    	margin-top: -100px;
+    	margin-bottom: 42px;
+	}
+	.botao {
+    	margin: 50px;
+    }
+    
+    /*Profissional*/
+    .text2 {
+    	text-align: center;
+    	font-size: 23px;
+    	align-items: center;
+        margin: auto;
+    	height: inherit;
+    	margin-top: -11%;
+	}
+    
+    /*Produtos*/
+    #produto {
+    	background-color: rgb(128, 128, 128);
+    	width: 100%;
+    	height: 200vh;
+    	display: inline-block;
+    	position: relative;
+    	text-align: center;
+    	font-size: 60px;
+    	color: rgb(255, 255, 255);
+	}
+	.lis-product {
+    position: relative;
+    display: flex;
+    border-width: 2px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    align-items: center;
+    padding-left: 40px;
+    padding-top: 36px;
+}
+.lis-product2 {
+    margin-top: 30%;
+    position: relative;
+    display: flex;
+    border-width: 2px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding-left: 61px;
+    padding-top: 75px;
+}
+    .img-container .img-pruduto {
+   		height: 150px;
+	}
+	.text-container {
+   	 	box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    	padding: 24px 20px 20px 20px;
+    	border-radius: 20px;
+    	background: #fff;
+    	margin: -147px 0px 0px 0px;
+    	line-height: 19px;
+    	font-size: 12px;
+    	height: 272px;
+	}
+	.text-container h3 {
+    	margin: 20px 0px 10px 0px;
+    	color: rgb(0, 0, 0);
+    	font-size: 14px;
+	}
+	.produto_01 {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 5px;
+	}
+	.a-box {
+    	display: inline-block;
+    	width: 217px;
+    	margin-top: 138px;
+    	text-align: center;
+	}
+	.seta {
+    font-size: 20px;
+    padding: 42px;
+    margin-top: 64%;
+    margin-left: 0px;
+   	}
+   	.arrow, .right {
+    	margin-left: 32px;
+    	transform: translate3d(0, -50%, 0) rotate(45deg);
+	} 
+	/*serviço*/  
+	.title {
+    	margin-top: 34px;
+	} 
+	#servico {
+    	width: 100%;
+    	height: 136vh;
+    	display: inline-block;
+    	background-color: rgb(0, 0, 0);
+    	position: relative;
+    	text-align: center;
+    	font-size: 57px;
+    	color: rgb(255, 255, 255);
+	}
+	.lis-servico {
+		margin:0px;
+		padding:0px;
+    	position: relative;
+    	display: flex;
+    	float: left;
+	}
+
+	.img-servico {
+    	width: 388px;
+    	height: 508px;
+    	background: url(/images/infatil.jpg);
+    	background-color: black;
+    	background-size: cover;
+    	cursor: pointer;
+    	-webkit-box-shadow: 0 0 5px #000;
+    	box-shadow: 0 0 5px #000;
+    	margin: 6px;
+	}
 }

@@ -20,15 +20,17 @@
 	}
 	
 .image{
-	display: flex;
+	display: block;
 	margin-top: -520px;
 	white-space: break-spaces;
 	margin-left: 40%;
+	min-width: 9px;
+	min-height: 9px;
 }
 
  @media (max-width: 1674px) {
 	.image {
-		display:flex;
+		display:block;
 		margin-top: -5px;
 		margin-left: 4%;
 		
