@@ -5,7 +5,6 @@
 **Grupo 1**  <br>
 Bruna Ciriaco Benedito<br>
 Fernanda Gonçalves de Lima<br>
-Flavia Correa de Moraes Cacau Alves<br>
 Luis Gustavo Baia Alves<br>
 Vicente Santos Gonçalves<br>
 
