@@ -42,16 +42,18 @@
 	
 		<section id="cliente">
 		<div class="cliente-img">
-			<img class="img_cliente" th:src="@{/images/cliente.jpeg}" />
+			<img class="img_cliente" th:src="@{/images/cliente.jpeg}" alt="Imagem de homem branco realizando um corte de cabelo à tesoura em uma barbearia"/>
 		</div>
 			<div class="text">
 			<div class="title_cliente">
-				<p class="title"><img width="80px" th:src="@{/images/homem.png}"> Clientes </p>
+				<p class="title"><img width="80px" th:src="@{/images/homem.png}" alt="logo homem coom barba"> Clientes </p>
 			</div>
 				<p> Aqui colocamos nosso cliente em primeiro lugar.</p>
-				<p> Quem optar por nosso serviços tem o benefício de escolher sua data
-					e o profissional que ira execultar o serviço fora outros benefício</p>
+				<p></p>
+				<p> Quem optar por nossos serviços, contam com o benefício de escolher sua data e o profissional que irá execultar o serviço, entre outros.</p>
+				<p></p>
 			<div class="botao">
+				<p></p>
 				<a class="cadastra_cliente" th:href="@{/sig/cliente}">Cadastre-se</a>
 			</div>
 			</div>
@@ -59,16 +61,19 @@
 		
 		<section id="profissional">
 			<div class="text2">
-				<p class="title"><img  width="80px" th:src="@{/images/barbeiro.png}"> Profissional </p>
+				<p class="title"><img  width="80px" th:src="@{/images/barbeiro.png}" alt="logo de hoomem barbudo com uma tesoura ao lado"> Profissional </p>
 				<p> Aqui colocamos nossos profissionais em primeiro lugar.</p>
+				<p></p>
 				<p> Quem opta por ser nosso profissional tem a liberdade abrir a agenda de serviços,</p>
 				<p> de acordo com a disponibilidade no período.</p>
+				<p> </p>
+				<p> </p>
 				<div class="botao">
 					<a class="cadastra_cliente" th:href="@{/sig/profissional}">Cadastre-se</a>
 				</div>
 			</div>
 			<div class="profissional-img">
-			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" />
+			<img class="img_profissional" th:src="@{/images/Profissional.jpg}" alt="imagem de homem branco com avental de barbeiro e expressão de mal, com tesoura e navalha na mão"/>
 			</div>
 		</section>
 		
@@ -186,14 +191,14 @@
 			<span class="lis-servico">
 				<div class="img-servico kid">
 					<div class="overlay">
-						<div class="items"> Corte Infantil</div>
+						<div class="items">Corte Infantil</div>
 						<div class="items head">
-							<p> Crianças de 0 a 5 anos</p>
+							<p> Crianças de 0 a 12 anos</p>
 							<hr>
 						</div>
 						<div class="items price">
-							<p class="old">R$ 40,90</p>
-							<p class="new">R$ 29,99</p>
+							<p class="old">R$ 60,00</p>
+							<p class="new">R$ 30,00</p>
 						</div>
 						<div class="items cart">
 							<i class="fa fa-cart-plus" aria-hidden="true"></i>
@@ -204,9 +209,26 @@
 				<i class="fa fa-scissors" aria-hidden="true"></i>
 				<div class="img-servico adulto">
 					<div class="overlay">
-						<div class="items"> Corte Infantil</div>
+						<div class="items">Corte Adulto</div>
 						<div class="items head">
-							<p> Crianças de 0 a 5 anos</p>
+							<p> Adultos de 20 a 52 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 60,00</p>
+							<p class="new">R$ 50,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<div class="img-servico diversos">
+					<div class="overlay">
+						<div class="items">Barbearia</div>
+						<div class="items head">
+							<p> Adultos em geral</p>
 							<hr>
 						</div>
 						<div class="items price">
@@ -219,16 +241,33 @@
 						</div>
 					</div>
 				</div>
-				<div class="img-servico diversos">
+				<div class="img-servico juvenil">
 					<div class="overlay">
-						<div class="items"> Corte Infantil</div>
+						<div class="items">Corte Juvenil</div>
 						<div class="items head">
-							<p> Crianças de 0 a 5 anos</p>
+							<p> Jovens de 13 à 19 anos</p>
 							<hr>
 						</div>
 						<div class="items price">
-							<p class="old">R$ 40,90</p>
-							<p class="new">R$ 29,99</p>
+							<p class="old">R$ 50,00</p>
+							<p class="new">R$ 35,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<div class="img-servico senior">
+					<div class="overlay">
+						<div class="items">Corte Sênior</div>
+						<div class="items head">
+							<p> Adultos acima de 52 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 70,00</p>
+							<p class="new">R$ 55,00</p>
 						</div>
 						<div class="items cart">
 							<i class="fa fa-cart-plus" aria-hidden="true"></i>
