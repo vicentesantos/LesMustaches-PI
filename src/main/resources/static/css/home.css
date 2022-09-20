@@ -656,13 +656,16 @@ a:hover:before {
 		.img-servico {
 			width: 312px;
 			height: 508px;
-			background: url(/images/infatil.jpg);
 			background-color: black;
 			background-size: cover;
 			cursor: pointer;
 			-webkit-box-shadow: 0 0 5px #000;
 			box-shadow: 0 0 5px #000;
 			margin: 6px;
+		}
+
+		.infantil {
+			background-image: url(/images/infatil.jpg);
 		}
 
 		.adulto {
