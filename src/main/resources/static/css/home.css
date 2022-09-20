@@ -108,30 +108,34 @@ body {
 
 .title {
 	text-decoration: double;
-	font-size: 40px;
+	font-size: 55px;
 	padding: 20px;
+	font-weight: bold;
 }
 
 .text {
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items:center;
 	flex-direction: column;
 	padding: 20px;
 	margin: auto;
 	height: inherit;
 	flex: 1;
+	color:black;
 }
-
+.botao{
+	margin-top: 15px;
+}
 .img_cliente {
 	width: 100%;
 
 }
 
 .cliente-img {
-	flex: 1;
+	flex: 0.44;
 }
 
 
@@ -150,6 +154,7 @@ button {
 	margin-top: 50px;
 	text-align: center;
 	padding: 10px;
+	font-size: 35px;
 }
 
 .cadastra_cliente:hover {
@@ -170,7 +175,7 @@ button {
 
 .text2 {
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	display: flex;
 	justify-content: space-around;
 	align-items:center;
@@ -179,11 +184,12 @@ button {
 	margin: auto;
 	height: inherit;
 	flex: 1;
+	color:black;
 
 }
 
 .profissional-img {
-	flex: 1
+	flex: 0.44;
 }
 
 .img_profissional {
@@ -239,7 +245,6 @@ a:hover:before {
 #produto {
 	background-color: rgb(128, 128, 128);
 	width: 100%;
-
 	display: flex;
 	padding: 1rem;
 	justify-content: space-around;
@@ -531,6 +536,8 @@ a:hover:before {
 		.title_cliente {
 			margin-top: -100px;
 			margin-bottom: 42px;
+			font-weight: bold;
+			
 		}
 
 		/*Profissional*/
