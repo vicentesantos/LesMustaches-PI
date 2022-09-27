@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="../js/carrinho.js" async ></script>
 	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
@@ -34,6 +35,7 @@
 					<li><a href="#produto">Produtos</a></li>
 					<li><a href="#servico">Serviços</a></li>
 					<li><a th:href="@{/sig/pedido}">Pedidos</a></li>
+					<li><img th:src="@{/images/carrinho.png}" alt="icon_carrinho" class="carrinho"></li>
 				</ul>
 			</nav>
 		</div>
@@ -95,7 +97,7 @@
 					<img class="img-produtos " th:src="@{/images/produtos/01.png}"
 						alt="Grooming para Cabelo BURB Midlands 250 mililitros" />
 					<h1>Grooming para Cabelo B.URB Midlands 250ml</h1>
-					<p class="preco1">R$59,90</p>
+					<p class="preco1"></p>
 					<div class="carrinho">
 						<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
 						<a> Carrinho </a>
@@ -146,7 +148,7 @@
 					<p class="preco1">R$69,90</p>
 					<div class="carrinho">
 						<input class="qdt" type="number" name="quantidade" min="1" max="100" placeholder="0">
-						<a> Carrinho </a>
+						<button class="addItem" type="button">Carrinho</button>
 					</div>
 				</div>
 

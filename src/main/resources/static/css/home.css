@@ -100,6 +100,7 @@ body {
 
 	background-color: white;
 	width: 100%;
+	height:100%;
 	position: relative;
 	display: flex;
 	flex-direction: row;
@@ -117,25 +118,20 @@ body {
 	text-align: center;
 	font-size: 35px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items:center;
 	flex-direction: column;
 	padding: 20px;
 	margin: auto;
 	height: inherit;
-	flex: 1;
 	color:black;
 }
 .botao{
 	margin-top: 15px;
 }
 .img_cliente {
-	width: 100%;
+	height:100%;
 
-}
-
-.cliente-img {
-	flex: 0.44;
 }
 
 
@@ -177,19 +173,13 @@ button {
 	text-align: center;
 	font-size: 35px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items:center;
 	flex-direction: column;
 	padding: 20px;
 	margin: auto;
-	height: inherit;
-	flex: 1;
 	color:black;
 
-}
-
-.profissional-img {
-	flex: 0.44;
 }
 
 .img_profissional {
@@ -562,6 +552,11 @@ a:hover:before {
 			align-items: center;
 			margin: auto;
 			display: block;
+		}
+		.title{
+			margin-top: 0px;
+    		margin-bottom: 0px;
+		}
 		}
 
 		.img_profissional {
