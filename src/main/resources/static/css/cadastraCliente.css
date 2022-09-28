@@ -1,7 +1,8 @@
 html, body{
 	margin: 0; 
 	padding: 0; 
-	height:100%;  
+	height:100%; 
+  font-weight: bold; 
 }
 .menu_logo{
 	width: 250px;
@@ -171,4 +172,9 @@ color:rgb(255, 255, 255);
 .cd_cliente{
 		display:none;
 	}
+
+/* INICIO BREADCRUMBS */
+
+/* FIM BREADCRUMBS */
+
 }
