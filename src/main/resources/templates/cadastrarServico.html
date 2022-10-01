@@ -25,12 +25,12 @@
 	<nav class="menu">
 		<img width="16%" th:src="@{/images/logo_sem_fundo.png}" />
 		<ul class="menu_li">
-			<li><a class="menu__item" href="http://localhost:8080">Home</a></l>
-				<li><a class="menu__item" href="http://localhost:8080/#cliente">Clientes </a></li>
-				<li><a class="menu__item" href="http://localhost:8080/#profissional">Profissional</a></li>
-				<li><a class="menu__item" href="http://localhost:8080/#produto">Produtos</a></li>
-				<li><a class="menu__item" href="http://localhost:8080/#servico">Serviços</a></li>
-				<li><a class="menu__item" href="http://localhost:8080/#pedidos">Pedidos</a></li>
+			<li><a class="menu__item" th:href="@{/}">Home</a></l>
+			<li><a class="menu__item" th:href="@{/sig/cliente}">Clientes </a></li>
+			<li><a class="menu__item" th:href="@{/sig/profissional}">Profissional</a></li>
+			<li><a class="menu__item" th:href="@{/sig/produto}">Produtos</a></li>
+			<li><a class="menu__item" th:href="@{/sig/servico}">Serviços</a></li>
+			<li><a class="menu__item" th:href="@{/sig/pedido}">Pedidos</a></li>
 		</ul>
 	</nav>
 	<div class="container my-5">
@@ -39,9 +39,9 @@
 			<!-- INICIO_BREADCRUMB				 -->
 			<div class="bodyPaginaInterna">
 				<div class="marginPaginaInterna">
-					<a href="http://localhost:8080"><span class="breadCrumFont">Home</span></a>
+					<a th:href="@{/}"><span class="breadCrumFont">Home</span></a>
 					<span class=" > "> > </span>
-					<a href="http://localhost:8080/#servico"><span class="breadCrumFont">Serviços</span></a>
+					<a th:href="@{/#servico}"><span class="breadCrumFont">Serviços</span></a>
 					<span class=" > "> > </span>
 					<span class="breadCrumFont">Cadastrar</span>
 				</div>
