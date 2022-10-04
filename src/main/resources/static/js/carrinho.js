@@ -155,8 +155,8 @@ function renderSubtotal(){
    			 <a class="closes" onclick="closes()">X</a>
               <img class="teste" src="/images/logo_sem_fundo.png" />
               <div class="text_total">
-	              <p>Valor Total:${totalPreco.toFixed(2)}</p>
-	               <p>Total Item:${totalItem}</p>
+	              <p>Valor Total: R$ ${totalPreco.toFixed(2)}</p>
+	               <p>Total Item: ${totalItem}</p>
 	           </div>
 	                              
 	   `;
