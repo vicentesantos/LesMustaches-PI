@@ -3,21 +3,21 @@ var product = [
 	id: 1,
     img: '/images/produtos/01.png',
     name: 'Grooming para Cabelo B.URB Midlands 250ml',
-    preco: 59.90,
+    preco: 59.00,
     estoque: 100
   },
   {
 	 id: 2,
      img: '/images/produtos/02.png',
      name: 'Shampoo Barba Forte Gasoline 250 ml',
-     preco: 31.90,
+     preco: 30.00,
      estoque: 100
   },
   {
 	 id: 3,
      img: '/images/produtos/03.png',
      name: 'Kit de Barbear Go. Clinical',
-     preco: 59.90,
+     preco: 59.00,
      estoque: 100
   },
   {
@@ -31,28 +31,28 @@ var product = [
 	id: 5,
     img: '/images/produtos/05.png',
     name: 'Protetor Solar episol Color Tom 6 Negro 70 FPS 40g',
-    preco: 69.90,
+    preco: 69.00,
     estoque: 100
   },
   {
 	id: 6,
     img: '/images/produtos/06.png',
     name: 'Truss Uso Obrigatório - Tratamento Reconstrutor 260ml',
-    preco: 91.99,
+    preco: 90.00,
     estoque: 100
   },
   {
 	id: 7,
     img: '/images/produtos/07.png',
     name: 'Condicionador Para Cabelo Don Alcides Rolling Stones - 300g',
-    preco:  53.90,
+    preco:  70.00,
     estoque: 100
   },  
   {
 	id: 8,
     img:'/images/produtos/08.png',
     name: 'Pomada em Pó Route 66',
-    preco: 34.90,
+    preco: 20.00,
     estoque: 100
   },
   
