@@ -35,12 +35,12 @@
 		<img class="menu_logo" th:src="@{/images/logo_sem_fundo.png}" />
 
 		<ul class="menu_li">
-			<li><a class="menu__item" th:href="@{/}">Home</a></l>
-			<li><a class="menu__item" th:href="@{/sig/cliente}">Clientes </a></li>
-			<li><a class="menu__item" th:href="@{/sig/profissional}">Profissional</a></li>
-			<li><a class="menu__item" th:href="@{/sig/produto}">Produtos</a></li>
-			<li><a class="menu__item" th:href="@{/sig/servico}">Serviços</a></li>
-			<li><a class="menu__item" th:href="@{/sig/pedido}">Pedidos</a></li>
+			<li class="active"><a href="#">Home</a></li>
+			<li class="active"><a href="#cliente">Clientes </a></li>
+			<li><a href="#profissional">Profissional</a></li>
+			<li><a href="#produto">Produtos</a></li>
+			<li><a href="#servico">Serviços</a></li>
+			<li><a th:href="@{/sig/pedido}">Pedidos</a></li>
 				<a class="carrinho">
 					<img class="icon_carrinho"src="./images/carrinho.png"/>
 					<div class="total-item"> 0 </div>	
