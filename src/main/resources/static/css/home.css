@@ -982,6 +982,7 @@ a:hover:before {
 		flex-direction: row;
 		gap: 15px;
 		color: rgb(255, 255, 255);
+		display:none;
 	}
 
 	.produtos2 {

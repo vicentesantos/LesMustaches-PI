@@ -176,7 +176,7 @@ const close = document.querySelector(".closes")
  		 modal.showModal();
 	  });
 function closes(){
-	
+	modal.style.display="none"
 		modal.close()
 	}	
  		
