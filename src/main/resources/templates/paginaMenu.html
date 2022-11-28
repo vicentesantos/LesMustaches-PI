@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org"
+	xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+
+<head>
+	<title>Les Mustaches Barbearia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="../js/carrinho.js" async ></script>
+	<script src="../js/app.js" async ></script>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	
+</head>
+
+<body >
+	<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+		<div class="w3-display-middle">
+			<h1 class="w3-jumbo w3-animate-top">Les Mustaches Barbearia</h1>
+			<button type="button" class="button">
+				<a class="text_agenda" >
+					<img src="https://img.icons8.com/ios/30/ffffff/calendar-plus.png" class="celendario" />
+					Agenda Online
+				</a>
+			</button>
+			<p class="w3-large w3-center"> Viva o conforto e o bem estar de cuidar da você</p>
+		</div>
+		<div class="w3-display-bottomleft w3-padding-large">
+		<div class="menu">
+		<input id="menu__toggle" type="checkbox" />
+		<label class="menu__btn" for="menu__toggle">
+			<span></span>
+			<p class="text_menu">Menu</p>
+		</label>
+		<img class="menu_logo" th:src="@{/images/logo_sem_fundo.png}" />
+		<ul class="menu_li">
+			<li class="active"><a href="#">Home</a></li>
+			<li class="active"><a href="#cliente">Clientes </a></li>
+			<li><a href="#profissional">Profissional</a></li>
+			<li><a href="#produto">Produtos</a></li>
+			<li><a href="#servico">Serviços</a></li>
+			<li><a th:href="@{/sig/pedido}">Pedidos</a></li>
+				<a class="carrinho">
+					<img class="icon_carrinho"src="./images/carrinho.png"/>
+					<div class="total-item"> 0 </div>	
+				</a>
+			</li>
+			<li>
+				<a type="button"  data-toggle="tooltip" data-placement="bottom" title="Contraste" onclick="darkMode()"><img src="https://img.icons8.com/ios-filled/20/FFFFFF/contrast.png"/> </a>
+			</li>
+			<li>
+				<a type="button"  data-toggle="tooltip" data-placement="bottom" title="Aumentar Fonte" onclick="fonte('a')"><img src="https://img.icons8.com/ios-filled/23/FFFFFF/increase-font.png"/></a>
+			</li>
+			<li>
+				<a type="button"  data-toggle="tooltip" data-placement="bottom" title="Diminuir Fonte" onclick="fonte('d')"><img src="https://img.icons8.com/ios-filled/25/FFFFFF/decrease-font.png"/> </a>
+			</li>
+    	</ul>
+  </div>
+		</div>
+		<dialog  class="cart_principal" >
+		<div class="card_cart"> </div>
+		<div class="total"> </div>
+	</dialog>
+	
+	</div>
+
+	<div class="tela-scroll">
+	
+		<section id="cliente">
+			<div class="cliente-img">
+				<img class="img_cliente" th:src="@{/images/cliente.jpeg}"
+					alt="Imagem de homem branco realizando um corte de cabelo à tesoura em uma barbearia" />
+			</div>
+			
+			<div class="text" th:action="@{WebSecurityConfig.java}" method="get">
+				<p class="title"><img width="80px" th:src="@{/images/homem.png}" alt="logo homem coom barba">
+					Clientes </p>
+				<p> Aqui colocamos nosso cliente em primeiro lugar.</p>
+				<p th:name="${username}"> Olá </p>
+				<p> Quem optar por nossos serviços, contam com o benefício de escolher sua data e o profissional que irá
+					execultar o serviço, entre outros.</p>
+				<p></p>
+				<div class="botao">
+					<p></p>
+					<a class="cadastra_cliente" th:href="@{/sig/cliente}">Cadastre-se</a>
+					<p></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="profissional" >
+			<div class="text">
+				<p class="title"><img width="80px" th:src="@{/images/barbeiro.png}"
+						alt="logo de homem barbudo com uma tesoura ao lado"> Profissional </p>
+				<p> Aqui colocamos nossos profissionais em primeiro lugar.</p>
+				<p></p>
+				<p>Quem optar por ser um de nossos profissionais, tem a liberdade de abrir a agenda de
+					serviços, de acordo com a sua disponibilidade no período.</p>
+				<p> </p>
+				<div class="botao">
+					<a class="cadastra_cliente" th:href="@{/sig/profissional}">Cadastre-se</a>
+				</div>
+			</div>
+			<div class="profissional-img">
+				<img class="img_profissional" th:src="@{/images/Profissional.jpg}"
+					alt="imagem de homem branco com avental de barbeiro e expressão de mal, com tesoura e navalha na mão" />
+			</div>
+		</section>
+
+		<!--Seção Produtos -->
+	<div id="produtos">
+		<div class="container-produto">
+			<div class="text-produto">
+				<p class="title"><img width="80px" th:src="@{/images/produtos.png}"
+						alt="logo da seção Produtos, imagem de uma pincel de barbear"> Produtos </p>
+			</div>
+			<section class="produto">
+
+			</section>
+		</div>
+	</div>
+
+		<section id="servico">
+			<p class="title"><img width="80px" th:src="@{/images/servico.png}"
+					alt="logo da seção Serviços, imagem de uma tesoura e um homem barbudo"> Serviços </p>
+			<span class="lis-servico">
+				<div class="img-servico kid">
+					<div class="overlay">
+						<div class="items">Corte Infantil</div>
+						<div class="items head">
+							<p> Crianças de 0 a 12 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 60,00</p>
+							<p class="new">R$ 30,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<div class="img-servico juvenil">
+					<div class="overlay">
+						<div class="items">Corte Juvenil</div>
+						<div class="items head">
+							<p> Jovens de 13 à 19 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 50,00</p>
+							<p class="new">R$ 35,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+				<i class="fa fa-scissors" aria-hidden="true"></i>
+
+				<div class="img-servico adulto">
+					<div class="overlay">
+						<div class="items">Corte Adulto</div>
+						<div class="items head">
+							<p> Adultos de 20 a 52 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 60,00</p>
+							<p class="new">R$ 50,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="img-servico senior">
+					<div class="overlay">
+						<div class="items">Corte Sênior</div>
+						<div class="items head">
+							<p> Adultos acima de 52 anos</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 70,00</p>
+							<p class="new">R$ 55,00</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="img-servico diversos">
+					<div class="overlay">
+						<div class="items">Barbearia</div>
+						<div class="items head">
+							<p> Adultos em geral</p>
+							<hr>
+						</div>
+						<div class="items price">
+							<p class="old">R$ 40,90</p>
+							<p class="new">R$ 29,99</p>
+						</div>
+						<div class="items cart">
+							<i class="fa fa-cart-plus" aria-hidden="true"></i>
+							<span>ADD TO CART</span>
+						</div>
+					</div>
+				</div>
+
+			</span>
+			<div class="seta_servico">
+				<p th:href="@{/sig/servico}">Ver mais Serviços</p>
+				<a th:href="@{/sig/servico}" class="arrow right"></a>
+			</div>
+		</section>
+	</div>
+</body>
