@@ -9,7 +9,7 @@
 	text-align: center;
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0
 		rgba(0, 0, 0, 0.24);
-	
+
 }
 @media  screen and  (min-width:1674px) {
 	  .formi{
@@ -18,7 +18,7 @@
 		margin-top: 102px;
 	  }
 	}
-	
+
 .image{
 	display: block;
 	margin-top: -520px;
@@ -33,10 +33,9 @@
 		display:block;
 		margin-top: -5px;
 		margin-left: 4%;
-		
+
 	}
 }
-	
 
 .formi input {
 	font-family: "Roboto", sans-serif;
